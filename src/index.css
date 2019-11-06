@@ -1,0 +1,74 @@
+:root {
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --mainYellow: #FFC300;
+  --secondDark: #595959;
+  --secondWhite: #d6d6d6;
+  --mainRed: #e74c3c;
+  --threeWhite: #fafafa;
+}
+.body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: var(--mainWhite);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: var(--mainBlack);
+}
+p{
+  color:var(--secondDark);
+  font-weight: 300;
+}
+.text-white {
+  color: var(--mainWhite);
+}
+.bg-yellow {
+  background-color: var(--mainYellow);
+}
+.text-black {
+  color: var(--mainBlack);
+}
+.text-red {
+  color: var(--mainRed);
+}
+.text-yellow {
+  color: var(--mainYellow)
+}
+.text-desc {
+    font-size: 14px;
+    color: #595959;
+    font-weight: 400;
+}
+.title-product {
+  font-size: 14px;
+  color: var(--mainBlack);
+  font-family: 'Roboto Condensed', sans-serif;
+  letter-spacing: 0;
+}
+.title-widget {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--mainBlack);
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.slick-prev:before, .slick-next:before {
+  color: var(--mainBlack) !important;
+}
+.home-social {
+  font-size: 25px;
+  color: var(--mainYellow);
+}
+.home-social:hover {
+  color: var(--mainRed);
+}
+.list-item {
+  text-decoration: none;
+  list-style: none;
+  padding: 5px 0px;
+  color: var(--secondary);
+}
+.list-item:hover{
+  color: var(--mainYellow);
+}
