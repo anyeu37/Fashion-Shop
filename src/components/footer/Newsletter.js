@@ -5,25 +5,32 @@ class Newsletter extends Component {
   render() {
     return (
       <React.Fragment>
-        <StyleNewsleter className="row">
-          <div className="col-md-6">
-            <p className="mb-0 text-black text-newsletter">
-              <span><i className="far fa-paper-plane pr-3"></i></span>
-              Sign Up for a Newsletter
-            </p>
-          </div>
-          <div className="col-md-6">
-            <form className="form-inline newsletter-form">
-              <div className="input-group">
-                <input type="text" className="form-control" id="inlineFormInputGroupUsername2" placeholder="Enter your  email" />
-                <div className="input-group-prepend">
-                  <button type="submit" className="btn btn-primary mb-2">Submit</button>
-                </div>
+        <section id="home-newsletter" className="home-newsletter bg-yellow text-black py-5" >
+          <div className="container">
+            <div className="row">
+              <div className="col-md-8 offset-md-2">
+                <StyleNewsleter className="row">
+                  <div className="col-md-6">
+                    <p className="mb-0 text-black text-newsletter">
+                      <span><i className="far fa-paper-plane pr-3"></i></span>
+                      Sign Up for a Newsletter
+                    </p>
+                  </div>
+                  <div className="col-md-6">
+                    <form className="form-inline newsletter-form">
+                      <div className="input-group">
+                        <input type="text" className="form-control" id="inlineFormInputGroupUsername2" placeholder="Enter your  email" />
+                        <div className="input-group-prepend">
+                          <button type="submit" className="btn btn-primary mb-2">Submit</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </StyleNewsleter>
               </div>
-            </form>
-
+            </div>
           </div>
-        </StyleNewsleter>
+        </section>
       </React.Fragment>
     );
   }

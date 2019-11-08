@@ -10,7 +10,6 @@ import SliderCustomer from '../components/Header/SliderCustomer';
 import News from '../components/blog/News';
 import Newsletter from '../components/footer/Newsletter';
 import Footer from '../components/footer/Footer';
-import Copyright from '../components/footer/Copyright';
 
 class Home extends Component {
     render() {
@@ -146,19 +145,8 @@ class Home extends Component {
                         </div>
                     </div>
                 </section>
-                <section id="home-newsletter" className="home-newsletter bg-yellow text-black py-5" >
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-8 offset-md-2">
-                                <Newsletter />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section id="footer" className="footer pt-5" >
-                    <Footer />
-                    <Copyright />
-                </section>
+                <Newsletter />
+                <Footer />
             </React.Fragment>
         );
     }
