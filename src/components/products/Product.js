@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Product extends Component {
     render() {
         return (
-            <BoxProduct className="box-product" src={this.props.src}>
+            <BoxProduct className="box-product" src={this.props.src} to="/">
                 <div className="box-body">
                     <div className="box-badge">
                         <p>new</p>
@@ -35,15 +35,19 @@ class Product extends Component {
                         </p>
                     </div>
                 </div>
-                <div className="box-footer text-center">
+                <Link className="box-footer text-center" to="">
                     <h4 className="title-product">FLORAL DRESS</h4>
                     <p className="text-yellow ">$300.00</p>
-                </div>
+                </Link>
             </BoxProduct>
         );
     }
 }
 const BoxProduct = styled.div`
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
     .box-body {
         background-image: ${props => `url(${props.src})`};
         background-size: cover;
@@ -93,7 +97,10 @@ const BoxProduct = styled.div`
         }
     }
     .box-footer{
-        padding: 20px 0px;
+        padding: 20px 15px;
+        &:hover {
+            text-decoration:none;
+        }
     }
 `
 export default Product;

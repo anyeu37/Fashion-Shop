@@ -7,6 +7,7 @@ import Products from '../containers/Products';
 import Contact from '../containers/Contact';
 import NotFound from '../containers/NotFound';
 import News from '../containers/News';
+import ProductsDetail from '../containers/ProductsDetail';
 
 class Router extends Component {
     render() {
@@ -27,6 +28,9 @@ class Router extends Component {
                     </Route>
                     <Route path="/contact">
                         <Contact />
+                    </Route>
+                    <Route path="/product-detail">
+                        <ProductsDetail />
                     </Route>
                     <Route>
                         <NotFound />

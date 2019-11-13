@@ -17,7 +17,7 @@ class Breadcrumbs extends Component {
     }
 }
 const BreadcrumbsStyle = styled.div`
-    background: ${props=>`url(${props.src})`};
+    background: ${props => `url(${props.src})`};
     background-size: cover;
     background-position: center;
     padding-top: 100px;
@@ -30,6 +30,9 @@ const BreadcrumbsStyle = styled.div`
         left: 0;
         right: 0;
         bottom: 0;
+    }
+    h2{
+        text-transform: uppercase;
     }
 `
 export default Breadcrumbs;
